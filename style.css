@@ -169,4 +169,65 @@ hr{
     font-size: 20px;
 }
 
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    
+}
+.flex > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.mainhead {
+    background: #ffffff;
+    height: 120px;
+}
+
+.mainart {
+    background: #ffc1ff;
+    height: 300px;
+}
+
+.aside1{
+    background: #ffc1ff;
+}
+
+.aside2{
+    background: #ffc1ff;
+}
+@media all and (min-width: 800px){
+    .mainart{
+        flex: 3;
+    }
+
+    .aside1{
+        order: 1;
+    }
+
+    .aside2{
+        order: 2;
+    }
+
+    .main{
+        order: 2;
+    }
+}
+
+@media all and (min-width: 600px){
+    .aside {
+        flex: 1;
+    }
+}
+
+.project{
+    width: 500px;
+}
+
+.project1{
+    width: 300px;
+}
 
